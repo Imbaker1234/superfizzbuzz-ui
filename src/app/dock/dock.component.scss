@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.flex-item {
+  display: flex;
+  margin: 2%;
+}
+
+app-inspiration, app-rules, app-options {
+  display: flex;
+  flex-grow: 2;
+  width: 30%;
+}
+
+app-score {
+  display: flex;
+  flex-grow: 1;
+}

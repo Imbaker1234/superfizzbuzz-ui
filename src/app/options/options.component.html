@@ -1,0 +1,12 @@
+<div class="column">
+  <h4 class="flex-item">Difficulty</h4>
+  <mat-radio-group
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group column"
+  [(ngModel)]="gameService.difficulty"
+  (change)="changeDifficulty()">
+    <mat-radio-button color="primary" value="Beginner">Beginner</mat-radio-button>
+    <mat-radio-button color="primary" value="Expert">Expert</mat-radio-button>
+    <mat-radio-button color="primary" value="Competitive" checked="true">Competitive</mat-radio-button>
+</mat-radio-group>
+</div>

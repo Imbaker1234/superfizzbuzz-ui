@@ -1,0 +1,20 @@
+h1, h2, h3, h4, h5, h6 {
+  background-color: black;
+  color: white;
+  mix-blend-mode: difference;
+  width: 100%;
+  margin: 3px auto;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rock Salt', cursive;
+  mix-blend-mode: difference;
+  overflow: visible;
+  background-color: black;
+  color: white;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}

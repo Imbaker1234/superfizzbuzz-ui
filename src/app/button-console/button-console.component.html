@@ -1,0 +1,31 @@
+<div class="row">
+
+    <button id="buttonOne" (click)="gameService.answerOne()" [disabled]="gameService.mode === 'result'" class="flex-item" mat-raised-button>
+      <label *ngIf="gameService.random === 1">{{gameService.currentNumber}}</label>
+      <label *ngIf="gameService.random === 2">Fizz</label>
+      <label *ngIf="gameService.random === 3">Buzz</label>
+      <label *ngIf="gameService.random === 4">FizzBuzz</label>
+    </button>
+
+    <button id="buttonTwo" (click)="gameService.answerTwo()"  [disabled]="gameService.mode === 'result'" class="flex-item" mat-raised-button>
+      <label *ngIf="gameService.random === 1">Fizz</label>
+      <label *ngIf="gameService.random === 2">{{gameService.currentNumber}}</label>
+      <label *ngIf="gameService.random === 3">FizzBuzz</label>
+      <label *ngIf="gameService.random === 4">Buzz</label>
+    </button>
+
+    <button id="buttonThree" (click)="gameService.answerThree()"  [disabled]="gameService.mode === 'result'" class="flex-item" mat-raised-button>
+      <label *ngIf="gameService.random === 1">Buzz</label>
+      <label *ngIf="gameService.random === 2">FizzBuzz</label>
+      <label *ngIf="gameService.random === 3">Fizz</label>
+      <label *ngIf="gameService.random === 4">{{gameService.currentNumber}}</label>
+    </button>
+
+    <button id="buttonFour" (click)="gameService.answerFour()" [disabled]="gameService.mode === 'result'" class="flex-item" mat-raised-button>
+      <label *ngIf="gameService.random === 1">FizzBuzz</label>
+      <label *ngIf="gameService.random === 2">Buzz</label>
+      <label *ngIf="gameService.random === 3">{{gameService.currentNumber}}</label>
+      <label *ngIf="gameService.random === 4">Fizz</label>
+    </button>
+
+</div>

@@ -1,0 +1,9 @@
+<div class="column" (click)="this.gameService.mode = 'start'">
+  <div class="flex-item">
+    <h2>Your Score:</h2>
+  </div>
+  <div class="flex-item">
+    <h1>{{gameService.endScore}}</h1>
+  </div>
+  <h6 *ngIf="gameService.mode === 'result'">(Click or Press Space to Continue)</h6>
+</div>

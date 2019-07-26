@@ -1,0 +1,5 @@
+<div class="row">
+  <app-rules class="flex-item"></app-rules>
+  <app-score *ngIf="gameService.mode !== 'start'" class="flex-item"></app-score>
+  <app-options *ngIf="gameService.mode === 'start'" class="flex-item"></app-options>
+</div>
