@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  mix-blend-mode: difference;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  height: 15vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#nav-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+}
+
+#nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 30%;
+}
+
+nav.navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-content: center;
+  background-color: white;
+  border-bottom: black;
+}
+
+.logo {
+  height: 100%;
+}
+
+button {
+  height: 75%;
+  width: 20%;
+  margin: 0 1%;
+  font-size: small;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav-links {
+
+}
+
+.nav-item {
+  border: white;
+}
+
+.nav-item:hover {
+
+}
+
+.nav-item:hover a {
+
+}
+
+.logo img {
+height: 100%;
+}
+
+h3, a {
+  mix-blend-mode: difference;
+  color: white;
+}
+
+#scoreBoard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: x-small;
+  font-weight: bold;
+}

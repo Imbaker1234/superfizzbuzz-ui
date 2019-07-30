@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  margin: auto;
+  justify-content: center;
+}
+
+mat-radio-button {
+  margin: 10% 0 0 0;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 600px) {
+  #main {
+    mat-radio-button {
+      margin: 5% 0 0 0;
+    }
+
+  }
+}
+
+h4, body {
+  font-family: 'Rock Salt', cursive;
+  overflow: visible;
+}

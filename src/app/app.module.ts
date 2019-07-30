@@ -1,23 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import {ButtonConsoleComponent} from './button-console/button-console.component';
-import {NgmatModule} from './ngmat/ngmat.module';
+import { AppComponent } from './components/app-core/app.component';
+import {ButtonConsoleComponent} from './components/button-console/button-console.component';
+import {NgmatModule} from './modules/ngmat.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { TimerComponent } from './timer/timer.component';
-import {ToastService} from './toast.service';
-import {GameService} from './game.service';
-import { ScoreComponent } from './score/score.component';
-import { InspirationComponent } from './inspiration/inspiration.component';
-import { OptionsComponent } from './options/options.component';
-import {QuoteService} from './quote.service';
-import {KeyboardListenerService} from './keyboard-listener.service';
-import { RulesComponent } from './rules/rules.component';
+import { TimerComponent } from './components/timer/timer.component';
+import {ToastService} from './services/toast.service';
+import {GameService} from './services/game.service';
+import { ScoreComponent } from './components/score/score.component';
+import { InspirationComponent } from './components/inspiration/inspiration.component';
+import { OptionsComponent } from './components/options/options.component';
+import {QuoteService} from './services/quote.service';
+import {KeyboardListenerService} from './services/keyboard-listener.service';
+import { RulesComponent } from './components/rules/rules.component';
 import {MatRadioModule} from '@angular/material';
 import {FormsModule} from '@angular/forms';
-import { DockComponent } from './dock/dock.component';
-import {RuleService} from './rule.service';
+import { DockComponent } from './components/dock/dock.component';
+import {RuleService} from './services/rule.service';
 
 @NgModule({
   declarations: [

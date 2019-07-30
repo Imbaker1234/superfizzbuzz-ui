@@ -1,0 +1,27 @@
+* {
+  mix-blend-mode: difference;
+}
+
+$progress-linear-bar-height: 12px;
+
+mat-progress-bar {
+  height: $progress-linear-bar-height;
+
+  .md-container {
+    height: $progress-linear-bar-height;
+
+    .md-bar {
+      height: $progress-linear-bar-height;
+    }
+
+    .md-dashed:before {
+      height: $progress-linear-bar-height;
+    }
+  }
+}
+
+#bottom-cover {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
