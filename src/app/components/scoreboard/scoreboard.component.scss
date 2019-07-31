@@ -1,0 +1,55 @@
+* {
+  mix-blend-mode: difference;
+}
+
+
+scoreBoardEntriesContainer {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+}
+
+//.blackEntry {
+//  display: flex;
+//  flex-direction: row;
+//  justify-content: space-between;
+//  background-color: black;
+//  color: white;
+//}
+//
+//.whiteEntry {
+//  background-color: white;
+//  display: flex;
+//  flex-direction: row;
+//  justify-content: space-between;
+//  color: white;
+//}
+
+#scoreBoardEntries {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Press Start 2P', cursive;
+
+  h3 {
+    align-self: center;
+    margin: 1% 0 3% 0;
+  }
+
+  .highScoreEntry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    border-style: ridge;
+    border-width: 4px 0 0 0;
+    padding: 1% 2% 1% 2%;
+  }
+}
+

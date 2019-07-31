@@ -1,12 +1,18 @@
 <nav class="navbar">
-  <div id="nav-right">
   <a href="http://SuperFizzBuzz.com" class="logo">
     <img src="../../../assets/SuperFizzBuzzLogo.png" alt="SUPER FIZZBUZZ!">
   </a>
-  </div>
   <div id="nav-left">
-    <button mat-raised-button (click)="reRoute('/')">Play</button>
-    <button id="scoreBoard" mat-raised-button (click)="reRoute('/')">ScoreBoard</button>
-    <button mat-raised-button (click)="reRoute('/')">About</button>
+
+
+      <mat-card mat-ripple matRippleColor="White" (click)="reRoute('/')">Play</mat-card>
+
+      <mat-card mat-ripple matRippleColor="White" id="scoreBoard" mat-fab (click)="reRoute('/scoreboard')">ScoreBoard</mat-card>
+
+      <mat-card mat-ripple matRippleColor="White" id="scoreBoardMobile" mat-fab (click)="reRoute('/scoreboard')">Score<br>Board</mat-card>
+
+      <mat-card mat-ripple matRippleColor="White" (click)="reRoute('/')">About</mat-card>
+
+
   </div>
 </nav>

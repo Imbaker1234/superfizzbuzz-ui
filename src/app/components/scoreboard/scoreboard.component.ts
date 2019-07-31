@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HighScoreService} from '../../services/high-score.service';
 import {HighScore} from '../../classes/high-score';
+import {ThemeService} from '../../services/theme.service';
 
 @Component({
   selector: 'app-scoreboard',
@@ -9,12 +10,10 @@ import {HighScore} from '../../classes/high-score';
 })
 export class ScoreboardComponent implements OnInit {
 
-  highScoreEntries: HighScore[];
-
-  constructor(private highScoreService: HighScoreService) { }
+  constructor(private highScoreService: HighScoreService, private themeService: ThemeService) { }
 
   ngOnInit() {
-    this.highScoreEntries = this.highScoreService.getAll();
+    this.highScoreService.getAll();
   }
 
 }

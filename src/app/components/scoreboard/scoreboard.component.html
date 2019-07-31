@@ -1,1 +1,11 @@
 
+<app-navbar></app-navbar>
+<mat-divider></mat-divider>
+  <div id="scoreBoardEntries">
+    <h2 id="HoHTitle">The Hall of Heroes</h2>
+    <div class="highScoreEntry" *ngFor="let score of this.highScoreService.highScoreEntries">
+      <div class="entry-item">{{score.score}}</div>
+      <div class="entry-item">{{score.name}}</div>
+      <div class="entry-item">{{score.date}}</div>
+    </div>
+  </div>

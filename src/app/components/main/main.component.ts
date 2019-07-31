@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {ThemeService} from '../../services/theme.service';
+import {MatRipple} from '@angular/material';
 
 @Component({
   selector: 'app-main',
