@@ -12,7 +12,9 @@ import {
   MatFormFieldModule,
   MatBadgeModule,
   MatCheckboxModule,
-  MatSlideToggleModule, MatProgressBarModule, MatSnackBarModule
+  MatSlideToggleModule,
+  MatProgressBarModule,
+  MatSnackBarModule, MatRadioModule, MatRippleModule, MatDividerModule, MatListModule, MatListItem
 } from '@angular/material';
 
 const materials = [
@@ -29,7 +31,11 @@ const materials = [
   MatCheckboxModule,
   MatSlideToggleModule,
   MatProgressBarModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatRadioModule,
+  MatRippleModule,
+  MatDividerModule,
+  MatListModule
 ];
 
 @NgModule({

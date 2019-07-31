@@ -10,7 +10,6 @@ export class KeyboardListenerService {
   }
 
   react(key: string) {
-    console.log(key);
     switch (key) {
       case '1':
         if (this.gameService.mode !== 'result') {

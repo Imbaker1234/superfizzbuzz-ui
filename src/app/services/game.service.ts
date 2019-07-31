@@ -116,8 +116,6 @@ export class GameService {
   }
 
   submitAnswer(answer) {
-    console.log('Answer Submitted: ' + answer);
-    console.log('Answer Expected: ' + this.correctAnswer);
     if (this.correctAnswer === answer) {
       this.nextTurn();
     } else {
@@ -148,9 +146,6 @@ export class GameService {
     if (this.difficulty === 'Competitive') {
       this.random = Math.floor(Math.random() * 3) + 1;
     }
-    console.log('==============================');
-    console.log('CORRECT ANSWER AT END OF TURN:');
-    console.log(this.correctAnswer);
   }
 
   public resetGame() {
@@ -159,7 +154,6 @@ export class GameService {
     this.random = 1;
     this.correctAnswer = 'Number';
     this.mode = 'result';
-    this.themeService.backgroundColor = 'white';
     const tauntMessage = this.quoteService.randomQuote();
     this.ts.toast(tauntMessage.quoteBody + ' - ' + tauntMessage.quoteSign, 7000);
   }
